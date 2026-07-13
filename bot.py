@@ -34,7 +34,6 @@ def extract_publication_date(soup, fallback_date=None):
     Extracts the publication date from common HTML meta tags and attributes.
     Returns a timezone-aware datetime object, or fallback_date if not found.
     """
-    # Try common meta tags for publication date
     date_selectors = [
         ('meta[property="article:published_time"]', 'content'),
         ('meta[name="publish_date"]', 'content'),
@@ -52,53 +51,42 @@ def extract_publication_date(soup, fallback_date=None):
             if date_str:
                 try:
                     parsed_date = date_parser.parse(date_str)
-                    # Ensure the date is timezone-aware
                     if parsed_date.tzinfo is None:
                         parsed_date = parsed_date.replace(tzinfo=pytz.UTC)
                     return parsed_date
                 except (ValueError, TypeError):
                     continue
     
-    # Fallback to provided date or current UTC time
-    return fallback_date if fallback_date else datetime.datetime.now(pytz.UTC)
+    return fallback_date
 
 def extract_article_context(url):
     """
     Dives into an individual article link and extracts a rich text summary.
-    Filters out short fragments (bylines, dates) to ensure detailed context.
-    Also extracts the publication date.
+    Also returns the publication date if found.
     """
     logging.info(f"Diving into article for rich context: {url}")
     html = fetch_html(url)
     if not html:
-        return "Could not fetch article context.", datetime.datetime.now(pytz.UTC)
+        return "Could not fetch article context.", None
         
     soup = BeautifulSoup(html, "html.parser")
-    
-    # Extract publication date
     pub_date = extract_publication_date(soup)
-    
-    # Locate all paragraphs across the page
     paragraphs = soup.find_all("p")
     
     valid_paragraphs = []
     for p in paragraphs:
         text = p.get_text(strip=True)
-        # Filter out short metadata snippets like dates, categories, or author names
         if len(text) > 70: 
             valid_paragraphs.append(text)
             
-    # Combine up to 4 deep paragraphs with clean spacing for a highly detailed summary
     context_text = "\n\n".join(valid_paragraphs[:4])
-    
     if not context_text.strip():
-        # Fallback: if no long paragraphs exist, grab the first 3 available text strings
         context_text = " ".join([p.get_text(strip=True) for p in paragraphs[:3]])
 
     return (context_text if context_text.strip() else "No detailed text context found on page."), pub_date
 
 def scrape_anthropic_announcements():
-    """Scrapes the Anthropic newsroom page."""
+    """Scrapes Anthropic newsroom, correctly associating dates from the index layout."""
     base_url = "https://www.anthropic.com"
     news_url = f"{base_url}/news"
     logging.info(f"Scraping Anthropic news announcements at {news_url}...")
@@ -109,35 +97,45 @@ def scrape_anthropic_announcements():
         return items
         
     soup = BeautifulSoup(html, "html.parser")
-    articles = soup.find_all("a", href=True)
+    today_utc = datetime.datetime.now(pytz.UTC).date()
     seen_urls = set()
     
-    for article in articles:
+    for article in soup.find_all("a", href=True):
         href = article['href']
         if "/news/" in href and href not in seen_urls:
-            seen_urls.add(href)
             full_url = urljoin(base_url, href)
             
-            title = article.get_text(strip=True)
+            container = article.find_parent(class_=lambda c: c and "post" in c.lower()) or article.find_parent()
+            container_text = container.get_text(" ", strip=True) if container else ""
+            
+            try:
+                parsed_date = date_parser.parse(container_text, fuzzy=True)
+                if parsed_date.date() != today_utc:
+                    continue
+            except (ValueError, TypeError):
+                continue
+
+            seen_urls.add(href)
+            title = article.get_text(strip=True) or "Anthropic Update"
             if len(title) < 5: 
                 continue 
                 
-            context, pub_date = extract_article_context(full_url)
-            
+            context, deep_pub_date = extract_article_context(full_url)
+            final_date = deep_pub_date if deep_pub_date else parsed_date
+            if final_date.tzinfo is None:
+                final_date = final_date.replace(tzinfo=pytz.UTC)
+
             items.append({
                 "title": f"Anthropic: {title}",
                 "link": full_url,
                 "description": context,
-                "pubDate": pub_date
+                "pubDate": final_date
             })
-            
-            if len(items) >= 3:
-                break
                 
     return items
 
 def scrape_meta_announcements():
-    """Scrapes the Meta newsroom page and dives into each link for rich context."""
+    """Scrapes the Meta newsroom page and skips deep dives for older stories."""
     base_url = "https://about.fb.com"
     news_url = f"{base_url}/news/"
     logging.info(f"Scraping Meta news announcements at {news_url}...")
@@ -149,11 +147,21 @@ def scrape_meta_announcements():
         
     soup = BeautifulSoup(html, "html.parser")
     articles = soup.find_all("article") 
+    today_utc = datetime.datetime.now(pytz.UTC).date()
     
     if not articles:
         articles = soup.find_all("div", class_=lambda c: c and "post" in c.lower())
 
     for article in articles: 
+        date_tag = article.find("time") or article.find(class_=lambda c: c and "date" in c.lower())
+        if date_tag:
+            try:
+                parsed_date = date_parser.parse(date_tag.get_text(strip=True))
+                if parsed_date.date() != today_utc:
+                    continue
+            except (ValueError, TypeError):
+                pass
+
         link_tag = article.find("a", href=True)
         if not link_tag:
             continue
@@ -164,24 +172,25 @@ def scrape_meta_announcements():
         if len(title) < 5:
             continue
             
-        context, pub_date = extract_article_context(full_url)
+        context, deep_pub_date = extract_article_context(full_url)
+        final_date = deep_pub_date if deep_pub_date else (date_parser.parse(date_tag.get_text(strip=True)) if date_tag else None)
         
-        items.append({
-            "title": f"Meta: {title}",
-            "link": full_url,
-            "description": context,
-            "pubDate": pub_date
-        })
-        
-        if len(items) >= 3:
-            break
+        if final_date and final_date.date() == today_utc:
+            if final_date.tzinfo is None:
+                final_date = final_date.replace(tzinfo=pytz.UTC)
+            items.append({
+                "title": f"Meta: {title}",
+                "link": full_url,
+                "description": context,
+                "pubDate": final_date
+            })
          
     return items
 
 def scrape_perplexity_announcements():
-    """Scrapes the Perplexity blog page and dives into each link for rich context."""
+    """Scrapes the strict Perplexity blog page using index dates to filter."""
     base_url = "https://www.perplexity.ai"
-    news_url = f"{base_url}/hub/blog"
+    news_url = "https://www.perplexity.ai/hub/blog"
     logging.info(f"Scraping Perplexity announcements at {news_url}...")
     
     html = fetch_html(news_url)
@@ -192,29 +201,37 @@ def scrape_perplexity_announcements():
     soup = BeautifulSoup(html, "html.parser")
     articles = soup.find_all("a", href=True)
     seen_urls = set()
+    today_utc = datetime.datetime.now(pytz.UTC).date()
     
     for article in articles:
         href = article['href']
-        # Filter for actual blog links, avoiding the main hub index or random navigation tags
         if "/hub/" in href and href not in seen_urls and href != "/hub/blog":
+            
+            parent_text = article.find_parent().get_text(" ", strip=True) if article.find_parent() else ""
+            try:
+                parsed_date = date_parser.parse(parent_text, fuzzy=True)
+                if parsed_date.date() != today_utc:
+                    continue
+            except (ValueError, TypeError):
+                continue
+
             seen_urls.add(href)
             full_url = urljoin(base_url, href)
-            
             title = article.get_text(strip=True)
             if len(title) < 5: 
                 continue 
                 
-            context, pub_date = extract_article_context(full_url)
+            context, deep_pub_date = extract_article_context(full_url)
+            final_date = deep_pub_date if deep_pub_date else parsed_date
+            if final_date.tzinfo is None:
+                final_date = final_date.replace(tzinfo=pytz.UTC)
             
             items.append({
                 "title": f"Perplexity: {title}",
                 "link": full_url,
                 "description": context,
-                "pubDate": pub_date
+                "pubDate": final_date
             })
-            
-            if len(items) >= 3:
-                break
                  
     return items
 
@@ -248,8 +265,6 @@ def build_rss_feed(feed_items, output_file="market_intel_rss.xml"):
 
 def main():
     logging.info("KI Market Intel Bot initialized.")
-    
-    # Clear existing RSS feed before running
     clear_rss_feed()
     
     try:
@@ -257,13 +272,13 @@ def main():
         meta_intel = scrape_meta_announcements()
         perplexity_intel = scrape_perplexity_announcements()
         
-        # Combine all gathered items into one comprehensive list
         all_intel = anthropic_intel + meta_intel + perplexity_intel
         
-        if all_intel:
-            build_rss_feed(all_intel)
-        else:
-            logging.warning("No intelligence data gathered on this run.")
+        # --- CHANGED: Always compile the feed file ---
+        if not all_intel:
+            logging.warning("No intelligence data gathered for today's date. Generating empty feed file.")
+        
+        build_rss_feed(all_intel)
             
     except Exception as e:
         logging.error(f"An error occurred during execution: {e}")
