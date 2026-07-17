@@ -7,18 +7,6 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Jul 2026 12:20:18 +0000</lastBuildDate>
-    <item>
-      <title>Meta: Meta Update</title>
-      <link>https://about.fb.com/news/2026/07/keeping-parents-informed-teens-distress-conversations-meta-ai/</link>
-      <description>We want teens to have age-appropriate experiences with AI and to keep parents informed if we become aware that their teen may be in distress. Today we’re announcing additional protections to help make sure that, when it comes to sensitive conversations related to suicide and self-harm, we’re responding in the right way. This means acknowledging teens’ feelings while helping them get the offline support they need — whether that’s from a parent, a professional helpline, or the emergency services.
-
-When a teen suggests they may be thinking about suicide or self-harm, Meta AI already directs them to crisis helplines and encourages them to reach out to a parent or another trusted adult like a counselor. Now, we’ll also proactively alert supervising parents if their teen’s Meta AI chat suggests they may be at risk, based on signals developed with experts. We’ll share expert resources to help parents approach these conversations with their teens.
-
-We worked with parents and experts to understand which AI conversations warrant an alert — such as those where a teen makes a clear reference to hurting themselves, even if that reference is subtle. We then built a dedicated AI system to identify these conversations.
-
-We understand how distressing these alerts may be for a parent to receive. That’s why, as we continue to improve our detection, all chats flagged by our AI will be manually reviewed before an alert is sent. If a teen’s intent is ambiguous, we’ll err on the side of caution and alert the parent. While that means we may sometimes notify parents when there may not be real cause for concern, we feel this is the right starting point, and we’ll continue to monitor to help make sure we’re in the right place.</description>
-      <pubDate>Thu, 16 Jul 2026 11:00:45 +0000</pubDate>
-    </item>
+    <lastBuildDate>Fri, 17 Jul 2026 12:08:42 +0000</lastBuildDate>
   </channel>
 </rss>
