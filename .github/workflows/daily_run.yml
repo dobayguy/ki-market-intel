@@ -2,8 +2,8 @@
 
 on:
   schedule:
-    # Runs at 22:45 UTC (2:45 PM PST)
-    - cron: '45 22 * * *'
+    # Runs at 21:45 UTC (1:45 PM PST)
+    - cron: '45 21 * * *'
   workflow_dispatch: # Allows you to manually trigger it from the GitHub website anytime
 
 jobs:
