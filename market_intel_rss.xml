@@ -7,18 +7,42 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 27 Jul 2026 22:43:09 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2026 22:42:55 +0000</lastBuildDate>
     <item>
       <title>Meta: Meta Update</title>
-      <link>https://about.fb.com/news/2026/07/ai-glasses-helping-people-work-learn-live-independently/</link>
-      <description>Meta believes that the technology we build should strengthen human connection and empower people around the world. We want to ensure the future is for everyone—giving every person the tools to reach their full potential. Today, we’re announcing the recipients of the AI Glasses Impact Grants, to provide funding to 30 organizations across the U.S. that are using AI glasses to solve problems in their communities and industries.
+      <link>https://about.fb.com/news/2026/07/meta-is-signing-the-eu-ai-act-code-of-practice-on-transparency-of-ai-generated-content/</link>
+      <description>As AI-generated media becomes more photorealistic, it’s increasingly important that people have tools to help them identify it. We’ve been working to put this principle into practice at Meta sinceFebruary 2024, when we announced our approach to identifying and labeling AI-generated content on our platforms. More recently, we launched a research demo ofa detection toolto help people better understand if an image was made with Meta AI as part of these efforts.
 
-Welaunched the program in Januaryto put nearly $2 million directly behind organizations doing this kind of work. The program offers two grant types: Accelerator Grants for organizations already scaling proven impact with AI glasses, and Catalyst Grants for developers building applications for the glasses through Meta’s Device Access Toolkit. We selected recipients based on demonstrated impact, scalability, and relevance to areas where hands-free technology can make the biggest difference — including accessibility, workforce safety, education, agriculture, and economic opportunity. We received nearly 500 applications, and Catalyst Grant recipients will integrate their apps on Ray-Ban Meta glasses later this year — so what they build makes the glasses better for everyone.
+Signing theEU AI Act Code of Practice on Transparency of AI-Generated Content, which we confirmed we will do earlier this week, reflects our commitment to this principle. It also aligns with our ongoing work with peers across the entire stack to tackle these cross-industry challenges. Through forums likePartnership on AIand theCoalition for Content Provenance and Authenticity (C2PA), we’re working to develop solutions for identifying AI-generated content that are durable, technically-feasible and sustainable.
 
-People love their Ray-Ban Meta AI glasses and increasingly, we’re seeing why they’re not just great for day to day wear, they can be an essential tool on the job. When your work requires both hands, full attention, and real-time information – whether you’re on a ladder, under a hood, or navigating a city in a wheelchair – glasses are easier and safer to use.
+Getting this right is critically important. It means transparency measures that provide clarity, rather than more confusion. We must avoid a situation where online content is subject to a growing array of different labels and disclosures that end up overwhelming people, while at the same time adding additional regulatory complexity for providers.
 
-Here are a few of the most innovative projects. The full cohort of recipients spans 18 states, and can be foundhere.</description>
-      <pubDate>Mon, 27 Jul 2026 14:00:36 +0000</pubDate>
+As technical standards continue to evolve, we will work with the AI Office and other partners to keep the approach practical, interoperable and genuinely useful for the people it’s designed to serve.</description>
+      <pubDate>Tue, 28 Jul 2026 09:47:23 +0000</pubDate>
+    </item>
+    <item>
+      <title>Meta: Meta Update</title>
+      <link>https://about.fb.com/news/2026/07/whatsapp-web-calling-new-features/</link>
+      <description>Whether you’re on your phone, at your desk, or switching between the two, WhatsApp gives you a private and simple way to make calls. Today, we are bringing new features to make calling even easier, no matter where you are or what device you’re on.
+
+You can now make and receive audio and video calls, both one-on-one and group, directly from WhatsApp Web. No app download required.
+
+Whether you’re a college student on a shared computer, using a work laptop that doesn’t allow app downloads, or simply prefer your browser, you can jump on a call without leaving the browser you’re already on. You’ll have access to features available on your other devices including screen sharing, reactions, and a dedicated Calls tab with your full call history and favorites, all from your browser.
+
+Your calls on the web are end-to-end encrypted — with no time limits and at no cost. It’s the same private experience you expect from WhatsApp.</description>
+      <pubDate>Tue, 28 Jul 2026 14:00:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Meta: Meta Update</title>
+      <link>https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/</link>
+      <description>Meta and BlackRock announce a venture to finance the development and operation of a data center campus in El Paso, Texas
+
+Meta and BlackRock today announced a venture to develop and own a data center campus in El Paso, Texas.
+
+Meta has spent more than 15 years developing, constructing, and operating data center facilities. Meta Compute’s strategy builds on that foundation, pairing Meta’s infrastructure expertise with capital partnerships that deliver the speed and flexibility its long-term AI ambitions require.
+
+BlackRock, one of the world’s leading investment management firms, together with Global Infrastructure Partners and HPS Investment Partners, both a part of BlackRock, complements this strategy. BlackRock delivers substantial capital at scale, along with deep expertise in infrastructure investment and private financing — enabling the rapid execution of mission-critical data center projects. Meta selected BlackRock as its partner following a highly competitive process, reflecting the company’s disciplined approach to diversifying its infrastructure financing as it scales Meta Compute.</description>
+      <pubDate>Tue, 28 Jul 2026 09:30:23 +0000</pubDate>
     </item>
   </channel>
 </rss>
