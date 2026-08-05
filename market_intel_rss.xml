@@ -7,18 +7,6 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 04 Aug 2026 22:45:46 +0000</lastBuildDate>
-    <item>
-      <title>Meta: Meta Update</title>
-      <link>https://about.fb.com/news/2026/08/were-upgrading-your-whatsapp-group-chats/</link>
-      <description>Group chats are best on WhatsApp, helping you connect with groups you care about, from your inner circle to your fantasy football league.Today we’re making group chats even better with updates to polls for faster decision-making, @all mentions to get everyone’s attention, and the ability to create new group chats from existing ones.
-
-We’re making polls even more useful for group decisions with three new improvements. You can now set an end time to lock voting when time is up, hide voter names so the whole group is more comfortable sharing their preferences, and edit your poll questions within 15 minutes if you spot a typo or need to make a clarification. Whether you’re finalizing when to meet, where to meet, or what to do when you get there, it’s now easier to quickly go from question to decision.
-
-No more tagging people one by one or hoping your message gets noticed in a busy group chat. Use @all to notify everyone about urgent messages, like school or office closures, event deadlines, or last-minute changes to your plans. For larger groups with more than 32 people, @all is available for admins only.
-
-While the @all feature will alert you to important messages even in muted group chats, you remain in control of how you receive notifications and can mute @all at any time in notification settings.</description>
-      <pubDate>Tue, 04 Aug 2026 14:00:24 +0000</pubDate>
-    </item>
+    <lastBuildDate>Wed, 05 Aug 2026 22:43:27 +0000</lastBuildDate>
   </channel>
 </rss>
