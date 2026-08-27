@@ -7,18 +7,6 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 25 Aug 2026 22:00:59 +0000</lastBuildDate>
-    <item>
-      <title>Meta: Meta Update</title>
-      <link>https://about.fb.com/news/2026/08/new-account-security-features-for-whatsapp/</link>
-      <description>On WhatsApp, your conversations belong only to you and the people you’re talking to. It’s why we built end-to-end encryption by default, and it’s why we continue adding new ways to keep your account secure and in your hands. Here are a few we’ve been working on.
-
-Two-step verification is an extra protection layer that helps prevent someone from taking over your account, even if they get a hold of your one-time passcode. Until now, it was a six-digit PIN, but we’ve upgraded it to a full password: longer, alphanumeric, and even with special characters to make it harder to guess.
-
-When you get a call from someone who isn’t saved in your contacts, a little context can help you decide whether to pick up. On Android, you’ll now see more information about a non-contact caller, like whether the number is from a different country and if you have any groups in common. Scammers rely on urgency — now you can take a beat with some more info before answering.
-
-A passkey lets you log back into WhatsApp with your fingerprint, face ID, or screen lock code. It’s the fastest and most secure way to verify it’s really you, with no codes or PINs. More than a billion people have already set one up, and you can now add more than one passkey to your account if you use both Android and iOS devices. To get started, go to Settings &gt; Account &gt; Passkeys.</description>
-      <pubDate>Tue, 25 Aug 2026 13:05:56 +0000</pubDate>
-    </item>
+    <lastBuildDate>Thu, 27 Aug 2026 02:10:44 +0000</lastBuildDate>
   </channel>
 </rss>
