@@ -7,18 +7,6 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Sep 2026 23:40:53 +0000</lastBuildDate>
-    <item>
-      <title>Meta: Meta Update</title>
-      <link>https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/</link>
-      <description>Today, Meta is introducing Muse, a secure, private personal AI agent that proactively helps with people’s goals and suggests ideas. Because personal agents need a new kind of secure computer,Muse runs on Muse Secure VM, a dedicated, virtual machine (VM) that houses both the agent and a person’s data. Muse is designed around the way people already communicate, so talking to it works just like messaging another person, in the Muse app or directly in WhatsApp.
-
-It’s simple to use. People just tell Muse what needs to get done, and it takes action, powered byMuse Spark, Meta’s most capable model to date, built for real-world agentic work like this.
-
-Unlike other agents,Muse was built to work for billionsof people worldwide, so there’s no learning curve. Anyone can use it out of the box, no technical experience required. It can handle tasks, like sending an email or booking travel, and it can take on big audacious goals. Once a person shares a goal with Muse, it helps them develop a personalized plan and coordinate their time and resources, then advances the work on its own. It can open a browser, fill out forms, and negotiate on their behalf.
-
-For tasks that take more time, Muse keeps working after people close the app, and comes back when something changes or when it needs approval, like before it sends an email or makes a purchase. It gets better results with less effort: selling a car for more, lowering a bill, adjusting a training plan as the rest of someone’s life shifts.</description>
-      <pubDate>Tue, 08 Sep 2026 19:00:51 +0000</pubDate>
-    </item>
+    <lastBuildDate>Wed, 09 Sep 2026 23:31:17 +0000</lastBuildDate>
   </channel>
 </rss>
