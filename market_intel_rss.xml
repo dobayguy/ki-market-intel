@@ -7,30 +7,28 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 15 Sep 2026 23:43:36 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Sep 2026 23:52:44 +0000</lastBuildDate>
     <item>
       <title>Meta: Meta Update</title>
-      <link>https://about.fb.com/news/2026/09/presentation-de-meta-one-un-service-dabonnement-offrant-davantage-de-fonctionnalites-et-dia-pour-creer-se-connecter-et-se-demarquer/</link>
-      <description>Aujourd’hui, nous lançonsMeta One, un nouveau service d’abonnement qui apporte davantage de valeur aux applications et aux expériences que des milliards de personnes utilisent déjà, avec des offres destinées aux particuliers, aux créateurs et aux entreprises.
+      <link>https://about.fb.com/news/2026/09/canadian-start-up-smartarm-uses-ai-to-create-intuitive-bionic-prosthetics/</link>
+      <description>People and companies are using AI hardware and software to make life easier and more accessible for everyone. That’s the case with smartARM, a Toronto-based startup developing a vision-first bionic arm prototype that uses open-source software, with Meta AI glasses as an optional add-on, to explore more intuitive prosthetic control for people living with limb differences.
 
-Meta One offre aux abonnés davantage de fonctionnalités d’expression et un usage accru de l’IA, aide les créateurs à consacrer plus de temps à la création et moins de temps à se demander ce qui fonctionne, et propose aux entreprises de nouveaux outils pour les aider à se développer. L’expérience principale sur nos applications et Meta AI a toujours été gratuite, et cela ne changera pas. Les abonnements donnent accès à des fonctionnalités plus spécialisées et à un usage étendu de l’IA, allant au-delà de ce qu’une expérience gratuite conçue pour des milliards de personnes peut offrir.
+Many traditional prosthetic hands require users to switch manually between grip patterns for different objects, making it cumbersome to move everyday items. Something as seemingly natural as picking up a glass, and then a spoon, becomes a multistep process. smartARM addressed this by developing AI hardware and software that understands the environment, and  automatically selects a suitable grip for the object – so users can intuitively move between everyday tasks.
 
-Nous lançons Meta One avecplus de 50 fonctionnalités sur Instagram, Facebook, WhatsApp et Meta AI, avant de l’étendre progressivement àEdits, aux lunettes IA et à d’autres produits.
+smartARM’s prosthetic arm “sees” through a camera embedded in its palm. The team is using DINOv2, Meta’s open-source vision model, to help it recognize everyday objects from just a few reference photos, supporting smartARM’s grip-selection software.This allows it to grip and pick up objects based on direct visual feature reading, without needing prior understanding or additional programming. The arm can adapt almost instantly to objects trained on just a few photos – something that could take weeks previously.
 
-Plus tôt cette année, nous avons lancé les offres Meta One pour un seul produit —Instagram Plus,Facebook PlusetWhatsApp Plus— qui proposent de nouvelles fonctionnalités exclusives permettant davantage de connexion et de créativité sur Instagram et Facebook, ainsi que davantage d’organisation et de personnalisation sur WhatsApp.</description>
-      <pubDate>Tue, 15 Sep 2026 15:25:57 +0000</pubDate>
+smartARM uses Meta AI Glasses and the Meta Wearables Device Access Toolkit to extend and improve object recognition and understanding, providing more data from the egocentric point of view the glasses offer. Meta AI glasses  give the arm additional context to better understand what the user is trying to interact with. It also lets users add new objects, through the device app on their phones, giving everyone in the smartARM community a way to personalize their prosthetic around their everyday needs.</description>
+      <pubDate>Wed, 16 Sep 2026 16:00:19 +0000</pubDate>
     </item>
     <item>
       <title>Meta: Meta Update</title>
-      <link>https://about.fb.com/news/2026/09/introducing-meta-one-subscription-service-more-features-ai/</link>
-      <description>Today, we’re introducing Meta One: a new subscription service that brings more value to the apps and experiences billions of people already use — with plans for individuals, creators, and businesses.
+      <link>https://about.fb.com/news/2026/09/threads-expands-podcast-toolkit-for-creators-and-listeners/</link>
+      <description>We’re announcing new Threads tools for podcast creators and listeners, giving creators more ways to share their shows and listeners more ways to have conversations around the podcasts they love.
 
-Meta One gives subscribers more self-expression features and AI usage, helps creators spend more time creating and less time guessing, and gives businesses new tools designed to help them grow. The core experience across our apps and Meta AI has always been free, and that’s not changing. Subscriptions unlock more specialized capabilities and expanded AI usage that go beyond what a free experience built for billions can offer.
+Threads is already a place where people are connecting around podcasts, and these updates make it even easier to join conversations about your favorite shows.
 
-We’re launching with more than 50 features on Instagram, Facebook, WhatsApp, and Meta AI, and will expand to Edits, AI glasses, and more over time.
-
-Earlier this year, we launched Meta One single product plans —Instagram Plus,Facebook Plus, andWhatsApp Plus— offering exclusive new features that enable more connection and creativity on Instagram and Facebook and more organization and personalization on WhatsApp.</description>
-      <pubDate>Tue, 15 Sep 2026 15:00:59 +0000</pubDate>
+To help personalize content, tailor and measure ads, and provide a safer experience, we use cookies. By clicking or navigating the site, you agree to allow our collection of information on and off Facebook through cookies. Learn more, including about available controls:Cookie Policy</description>
+      <pubDate>Wed, 16 Sep 2026 14:53:31 +0000</pubDate>
     </item>
   </channel>
 </rss>
