@@ -7,28 +7,6 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 16 Sep 2026 23:52:44 +0000</lastBuildDate>
-    <item>
-      <title>Meta: Meta Update</title>
-      <link>https://about.fb.com/news/2026/09/canadian-start-up-smartarm-uses-ai-to-create-intuitive-bionic-prosthetics/</link>
-      <description>People and companies are using AI hardware and software to make life easier and more accessible for everyone. That’s the case with smartARM, a Toronto-based startup developing a vision-first bionic arm prototype that uses open-source software, with Meta AI glasses as an optional add-on, to explore more intuitive prosthetic control for people living with limb differences.
-
-Many traditional prosthetic hands require users to switch manually between grip patterns for different objects, making it cumbersome to move everyday items. Something as seemingly natural as picking up a glass, and then a spoon, becomes a multistep process. smartARM addressed this by developing AI hardware and software that understands the environment, and  automatically selects a suitable grip for the object – so users can intuitively move between everyday tasks.
-
-smartARM’s prosthetic arm “sees” through a camera embedded in its palm. The team is using DINOv2, Meta’s open-source vision model, to help it recognize everyday objects from just a few reference photos, supporting smartARM’s grip-selection software.This allows it to grip and pick up objects based on direct visual feature reading, without needing prior understanding or additional programming. The arm can adapt almost instantly to objects trained on just a few photos – something that could take weeks previously.
-
-smartARM uses Meta AI Glasses and the Meta Wearables Device Access Toolkit to extend and improve object recognition and understanding, providing more data from the egocentric point of view the glasses offer. Meta AI glasses  give the arm additional context to better understand what the user is trying to interact with. It also lets users add new objects, through the device app on their phones, giving everyone in the smartARM community a way to personalize their prosthetic around their everyday needs.</description>
-      <pubDate>Wed, 16 Sep 2026 16:00:19 +0000</pubDate>
-    </item>
-    <item>
-      <title>Meta: Meta Update</title>
-      <link>https://about.fb.com/news/2026/09/threads-expands-podcast-toolkit-for-creators-and-listeners/</link>
-      <description>We’re announcing new Threads tools for podcast creators and listeners, giving creators more ways to share their shows and listeners more ways to have conversations around the podcasts they love.
-
-Threads is already a place where people are connecting around podcasts, and these updates make it even easier to join conversations about your favorite shows.
-
-To help personalize content, tailor and measure ads, and provide a safer experience, we use cookies. By clicking or navigating the site, you agree to allow our collection of information on and off Facebook through cookies. Learn more, including about available controls:Cookie Policy</description>
-      <pubDate>Wed, 16 Sep 2026 14:53:31 +0000</pubDate>
-    </item>
+    <lastBuildDate>Thu, 17 Sep 2026 23:42:35 +0000</lastBuildDate>
   </channel>
 </rss>
