@@ -7,6 +7,18 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 17 Sep 2026 23:42:35 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Sep 2026 23:36:31 +0000</lastBuildDate>
+    <item>
+      <title>Meta: Meta Update</title>
+      <link>https://about.fb.com/news/2026/09/prostujemy-fakty-o-walce-z-oszukanczymi-reklamami-w-polsce/</link>
+      <description>Na początku tego tygodnia fundacja Instrat opublikowała raport dotyczący jednego z najtrudniejszych wyzwań, z jakimi mierzy się cała branża – reklam o charakterze oszukańczym. To poważne i złożone wyzwanie, które dotyczy firm technologicznych, banków i całego społeczeństwa. Ciężko pracujemy, by przeciwdziałać działaniom wyrafinowanych i zdeterminowanych przestępców wykorzystują zaawansowane systemy sztucznej inteligencji, narzędzia chroniące użytkowników oraz współpracując z organami ścigania i partnerami z branży. Rozliczanie nas z naszych działań jest w pełni uzasadnione, ale ten raport tego nie robi. To fikcja, która wprowadza opinię publiczną w błąd, przygotowana przez kancelarię prawną reprezentującą osobę, która pozwała Metę. Właśnie w tym kontekście należy go oceniać.
+
+Aby uzasadnić swoje tezy, raport opiera się na szeregu błędnych założeń, nieprecyzyjnych definicji i w niewłaściwy sposób przedstawia podejście Mety do zwalczania reklam o charakterze oszukańczym. Poniżej wskazujemy najważniejsze błędy raportu:
+
+Opisując metodologię szacowania przychodów, autorzy piszą: „Aby określić, które reklamy w zbiorze danych były oszukańcze, wykorzystaliśmy informację o tym, czy zostały one usunięte przez Metę”. To zafałszowuje i drastycznie zawyża ich wyliczenia.
+
+Nasze systemy działają w oparciu o szeroki zakresstandardów i zasad reklamowych– dotyczących towarów i usług objętych ograniczeniami, własności intelektualnej osób trzecich, jakości i formatu reklam oraz wielu innych – a nie wyłącznie oszustw. Podstawa szacunku przychodów jest więc błędna od samego początku.</description>
+      <pubDate>Fri, 18 Sep 2026 14:55:13 +0000</pubDate>
+    </item>
   </channel>
 </rss>
