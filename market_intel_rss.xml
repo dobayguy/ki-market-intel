@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Nov 2026 02:38:38 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 02:51:12 +0000</lastBuildDate>
     <item>
       <title>Anthropic: 2026 Usage Policy update</title>
       <link>https://www.anthropic.com/news/2026-usage-policy-update</link>
@@ -31,18 +31,6 @@ Our goal is for Claude to be a useful tool for political conversations, while pr
 
 Today, conversations that touch broadly on politics, public policy, or social issues account for about 5.75% of all conversations in the United States on Claude.ai, our consumer app. This includes people turning to Claude to follow the news, conduct academic or professional research on public policy, learn about candidates, and navigate government services. About 0.51% of all conversations are specifically about elections or voting. As we get closer to Election Day, we expect the share of political and election-related queries toincrease.</description>
       <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Anthropic: We’re highlighting 20 scientific foundations, institutions, and research groups around the world that we’ve partnered with in an expansion of our AI for Science program.</title>
-      <link>https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions</link>
-      <description>We’re highlighting 20 scientific foundations, institutions, and research groups from around the world that we’ve partnered with in an expansion of ourAI for Science program, which gives free Claude credits to researchers working on high-impact scientific projects.
-
-We started the AI for Science program in May 2025 with the belief that AI could significantly speed up scientific progress. Our goal is to increase access to AI tools and resources to enable researchers to deepen and expand their own scientific work. (Over the last few months, we’ve also launched our discountedTeam plan for scientistsand have supported hundreds of projects across biology, medicine, physics, chemistry, climate science, and mathematics.)
-
-Scientists have told us that they’re working with Claude to generate hypotheses, design experiments, swiftly analyze complex data, and communicate findings. With scientists at the center of this transformation, the field is setting the questions and developing the research projects that will help us tackle some of humanity’s toughest problems.
-
-Over the past year, we’ve started to expand this work and partner with scientific organizations to build collaborative research projects. For instance, we partnered withHHMI Janelia Research Campusto develop theModel Hardware Standard(MHS), a shared specification that lets AI agents safely operate lab instruments. MHS is currently in research preview. We also support theAllen Institute, a leader in creating large open datasets and tools to advance research on the brain, cells, and the immune system. The institute is building teams of AI agents to analyze that data, turning months of manual analysis into hours.</description>
-      <pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
